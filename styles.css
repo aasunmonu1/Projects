@@ -1,0 +1,61 @@
+div {
+	margin-bottom:50px;
+	}
+
+.sub button {
+	display:block;
+	text-align:center;
+	width:60px;
+	margin:10px 0px 50px 35px;
+}
+
+.page{
+	color:#414141;
+	background-color:#EEEEEE;
+	
+	box-sizing: border-box;
+	
+	width:800px;
+	margin:0 auto;
+}
+
+
+.rack{
+	
+	background-color: white;
+	border: 1px solid #EEEEEE;
+
+	box-sizing: border-box;
+	
+	width:800px;
+	margin:0 auto;
+}
+.call{
+	background-color: #EEEEEE;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+.subscribe{
+	color:blue;
+	display:bold;
+}
+
+#footer {
+	font-style: bold;
+	color: silver;
+}

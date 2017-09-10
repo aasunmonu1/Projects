@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+<head>
+
+<title> Jane's Collection  </title>
+<meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body> 
+
+<div class="page">
+<div class="nav">
+ <h2 style="color:blue">Jane's Fabrics</h2>
+
+ <a href="#"> <ul style="color:green">
+  <li>sign up</li>
+  <li>search fabrics</li>
+  <li>reserve a material</li>
+  <li>need a tailor</li>
+  <li><a href="nav.html">about us</a></li>
+</ul></a>
+ </div>
+ 
+ 
+ <div class="main">
+ <h1 style="color :blue"> Welcome </h1>
+   <img class="mySlides" src="C:\Users\Ajoke\Documents\Web design\linen.jpg" height="150" alt="linen fabric">
+	 <img class="mySlides" src="C:\Users\Ajoke\Documents\Web design\gele.jpg"  height="150" alt="gele fabric">
+	  <img class="mySlides" src="C:\Users\Ajoke\Documents\Web design\lace.jpg"  height="150" alt="lace fabric">
+  <img class="mySlides" src="C:\Users\Ajoke\Documents\Web design\silk.jpg"  height="150" alt="silk fabric">
+<img class="mySlides" src="C:\Users\Ajoke\Documents\Web design\ssilk.jpg"  height="150" alt="silk fabric">
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+ </script>
+ 
+
+ <h2> Amazing Fabrics Just For You!</h2>
+
+ <div style = "color:green">
+ Need a set of fabrics for your attires? Use <a href="jane's-collections.html">Jane's Collection</a> to get your perfect, stylish, affordable fabric.
+
+
+ <p style= "text-align:center; color:black"> OR </p>
+ 
+ 
+<p> Do you need a <a href="tailor.html" target="_blank">Tailor</a> to bring the best out of your fabric, who offers their services just as you want it? </p>
+ 
+ Here is a <a href="cities.html">list</a> of cities where you can find us.
+ <a href="https://www.google.com/maps"> use google maps </a> </div> 
+ 
+ 
+ 
+ 
+ <form action="/search-for-a-fabric">
+  <input type="text" placeholder="search-for-a-fabric" required>
+  
+  <div class= "sub" style="color:blue;">
+   <label><input type="radio" name="Pattern-Plain" > Pattern</label>
+  <label><input type="radio" name="Pattern-Plain"> Plain</label>
+ 
+  <button type="search" style="color:red">Search</button>
+</form>
+
+
+</div>
+
+<div class= "subscribe"> Subscribe &#9662; </div>
+
+ <p id = "footer">&copy; Jane Collections</p>
+ </div>
+ </div>
+
+ </body>
+ 
+ </html>
