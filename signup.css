@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+.nav{
+	color:white;
+	font-family: "Helvetica", "Arial", "sans-serif";
+	font-style:bold;
+	font-size:20px;
+	background-color: #000080;
+	display:flex;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.nav button{
+
+	color:white;
+	font-size: 15px;
+	border:0;
+	padding:5px;
+	background-color:#336600;
+}
+
+.menu{ 
+font-family:  "Calibri-light", "Arial", "sans-serif";
+font-style: bold;
+background-color:#ffffe6;
+border-top: 1px solid  #ffd11a;
+border-bottom:1px solid  #ffd11a;
+padding: 5px 10px 20px 2px;
+}
+a{
+	text-decoration:none;
+}
+
+.container{
+	color: gray;
+	font-family:  "Calibri-light", "Arial", "sans-serif";
+	font-style: bold;
+	background-color:#EEEEEE;
+}
+
+form{
+	padding-left:5px;
+	font-size:20px;
+	margin: 2px;
+}
+
+#email , #password{
+	font-size: 20px;
+	width:60%;
+}
+
+form button{
+	text-align:center;
+	color:white;
+	font-size:20px;
+	width: 40%;
+	margin: 10px 0px 10px 0px;
+	padding:5px;
+	border:0px;
+	background-color: #0066cc;
+	
+}
+
+.createbtn{
+	font-size: 15px;
+	background-color:#336600;
+	width:30%;
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+.footer{
+	color:white;
+	background-color:gray;
+	padding:10px;
+}
+.footer a:link{
+	color:white;
+	}

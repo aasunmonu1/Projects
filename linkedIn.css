@@ -1,0 +1,38 @@
+*{
+	margin: auto;
+	pading:0;
+}
+
+.nav{
+	color: white;
+	background-color: #002133;
+	text-align: center;
+	padding:5px;
+	font-family:"Helvetica", "Arial", "sans-serif";
+	font-size:40px;
+	font-style:bold;
+}
+body{
+	color:#EEEEEE;
+	background-color:gray;
+	font-family:"Helvetica", "Arial", "sans-serif";
+	font-size:15px;
+	text-align:center;
+}
+
+a {
+	text-decoration:none;
+	color:white;
+	font-family:"Helvetica", "Arial", "sans-serif";
+	font-size:15px;
+	font-style:bold;
+}
+#join{
+	color:white;
+	background-color:#0099ff;
+	font-size:20px;
+	padding:8px;
+	margin:10px;
+	border:0px;
+	width:30%;
+}
