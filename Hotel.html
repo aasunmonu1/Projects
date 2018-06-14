@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Manager</title>
+    <link rel="stylesheet" type="text/css" href="hotel.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" id="logo"><p><b> AJ Hotel</b></p></a>
+       
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Facility</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="doc">
+        <div id=main>
+           <div class="images">
+              <img class="mySlides" width="100%"  src="Images\hotel.jpg" alt="hotel">
+              <img class="mySlides"  width="100%" src="Images\gym.jpg"   alt="gym">
+              <img class="mySlides" width="100%"  src="Images\pool.jpg"  alt="pool">
+
+    <script>
+        var slideIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+     </script>
+           </div>
+        </div>
+    </div>
+    <div class="row">
+    <section class="panel -md-6">
+        <h1 class="panel-header">  Our Rooms </h1>
+        <p> At AJ Hotel, we have one of the most comfortable, exquisite and affordable rooms.</p>
+    </section>
+    <section "panel -md-6">
+        <h1 class="panel-header">Location and Covenience</h1>
+        <p> Our location is at the very heart of three major roads, making it very easy for you and your guests to get to your room as soon as you desire.</p>
+    </section>
+    <section "panel -md-6">
+        <h1 class="panel-header">Our Facility</h1>
+        <p>No doubt that our hotel was built with your convenience at heart.</p>
+    </section>
+    </div>
+    <footer>
+        <section>
+            <h3><b>AJ Hotel</b></h3>
+            <p><b>+2348011113333</b><br>
+            24, Surulere, Lagos.<br>
+            <a href="#">rooms@ajhotel.ng</a></p>
+        </section>
+        <section>
+            <h3><b>Connect With Us!</b></h3>
+            <ul class= "social">
+                <li><a href="#"> <img src ="Images\facebook-icon.png" alt="facebook-icon"></a></li>
+                <li><a href="#"> <img src ="Images\twitter-icon.png"   alt="twitter-icon"> </a></li>
+                <li><a href="#"> <img src ="Images\linkedin-icon.png"  alt="linkedin-icon"></a></li>
+                <li><a href="#"> <img src ="Images\skype-icon.png"    alt="skype-icon"></a></li>
+                <li><a href="#"> <img src ="Images\instagram-icon.png"  alt="instagram-icon"></a></li>
+            </ul>
+        </section>
+       <div class="clear"></div>
+    </footer>
+    <footer class= "second">
+        <p>&copy; AJ Hotel, 2018.</p>
+    </footer>
+</body>
+</html>
