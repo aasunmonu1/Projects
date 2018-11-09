@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio/Gallery</title>
+    <script src= "jquery-3.3.1.js"></script>
+    <link type = "text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header>
+                <div id= "logo">
+                    <a href="index.html"><img src="Image\capture.png" alt="ccbenji Logo"></a>
+                </div>
+        
+                <script>
+                $(window).scroll(function() {   
+                    var height = $(window).scrollTop(); 
+                    if(height  > 50) {
+                        $("header").css({"position": "fixed"});
+                    } else{
+                        $("header").css({"position": "relative"});
+                    }
+                });
+        </script>
+        
+            </header>
+        
+               <div class = "nav">
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li class= "services">
+                        <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
+                        <div class = "dropdown-content">
+                            <a href="portfolio.html">Gallery</a>
+                        </div>
+                    </li>
+                    <li class= "services">
+                        <a href="javascript:void(0)" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#wedding">Weddings</a>
+                            <a href="#baby">Baby</a>
+                            <a href="#portrait">Portrait</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+         <script>
+                    $(function(){
+                       $("#menu-icon li").hover(
+                           function(){
+                                $("ul.sub", this).slideDown(500);
+                           },
+                           function(){
+                            $("ul.sub", this).slideDown(300);
+                           }
+                       );
+                        });
+            </script>
+<div style="background-color:silver; height:900px;" class="main">
+    <div class="port">
+    <h1>
+        <p style="padding:70px 20px; font-family: Droid-serif;font-size:50px; color:grey;">Portfolio </p>
+    </h1>
+    </div>
+
+    <p style="padding:20px;"><a href="index.html" style="text-decoration:none; color:#10a8b5;">Home</a> / Portfolio</p>
+   <div>
+    <img src="Image\artifacts-1.jpg" width= "50%" style="float:left;"  alt="Artifact">
+    <img src="Image\gathering.jpg" width= "50%" style="float:right;" alt="Gathering">
+    <img src="Image\hut1.jpg" width= "50%" style="float:left;" alt="Hut">
+    <img src="Image\oblivionIVfinal.jpg" width= "50%" style="float:right;" alt="Oblivion"> 
+    <img src="Image\snowscape2.jpg" width= "50%" style="float:left;" alt="Snowscape">
+    <img src="Image\reflection1.jpg" width= "50%" style="float:right;" alt="Reflection">
+
+</div>
+    <div class="wrap">
+            
+                <section>
+                       <h2 style= "font-family: Droid serif; color:#e8eaed; text-decoration-line: underline; text-decoration-style:dotted;"> Subscribe to Blog via Email</h2>
+        
+                        <p style="color:grey; padding:10px; font-size: 17px; text-align: left;">Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+                        <form>
+                        <input id="email" type ="email" placeholder="Email Address" required><br>
+                        <br>
+                        <a href="#"><button id="subscribe" type = "btn" style = "font-family:Droid serif; font-size:15px;color: grey;"><b><i>Subscribe</i></b></button></a>
+                        </form>
+                        
+                        <!--
+                        <script>
+                                $(function(){
+                                    $("#subscribe").click(
+                                        function(){
+                                            window.location = ""
+                                            alert("Thanks for subscribing to our blog! /n It promises to be awesome!!!");
+                                        }
+                                    );
+                            
+                                });
+                            </script>
+                        -->
+                        
+                </section>
+            <div class="clear"></div>
+        
+                <section id="post" style="float:right;">
+                        <h2 style= "font-family: Droid serif; color:#e8eaed; text-decoration-line: underline; text-decoration-style:dotted;">Recent posts</h2>
+                        <ul style= "list-style-type: none;">
+                            <li> <a href="#">Fine Art Photography</a></li>
+                            <li> <a href="#">Calculating exposure times</a></li>
+                            <li> <a href="#">A Guide for Neutral Density Filters</a></li>
+                        </ul>
+                </section>
+                 <div class="clear"></div>
+                <section style="float:right;">
+                    <img src="Image\imac_face.png" width= "50%" alt="image">
+                    <p style="color:aliceblue;">Like us on <a href="#">facebook</a></p>
+                </section>
+                    <div class="clear"></div>
+        
+        </div>
+    
+        <footer class="first">
+            <section>
+                <h3 style="font-family: open sans;">ccbenji.co</h3>
+                <p>+2349066991205<br>
+                Ugbowo, Benin City<br>
+                <a href="#">photography@ccbenji.co.ng</a></p>
+            </section>
+            <section style=" float:right;">
+                <h3 style="font-family: open sans;"> Connect With Us!</h3>
+                <ul class= "social">
+                    <li><a href="#"> <img src ="Image\facebook-icon.png" alt="facebook-icon"></a></li>
+                    <li><a href="#"> <img src ="Image\twitter-icon.png"   alt="twitter-icon"> </a></li>
+                    <li><a href="#"> <img src ="Image\linkedin-icon.png"  alt="linkedin-icon"></a></li>
+                    <li><a href="#"> <img src ="Image\skype-icon.png"    alt="skype-icon"></a></li>
+                    <li><a href="#"> <img src ="Image\instagram-icon.png"  alt="instagram-icon"></a></li>
+                </ul>
+            </section>
+           <div class="clear"></div>
+        </footer>
+        <footer class= "second">
+            <p style="float:right; color:gray;">&copy; ccbenji | photography, 2018.</p>
+        </footer>
+</body>
+</html>

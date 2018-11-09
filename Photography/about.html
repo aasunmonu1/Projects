@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body style="box-shadow: 0.90;">
+        <header>
+                <div id= "logo">
+                    <a href="index.html"><img src="Image\capture.png" alt="ccbenji Logo"></a>
+                </div>
+        
+                <script>
+                $(window).scroll(function() {   
+                    var height = $(window).scrollTop(); 
+                    if(height  > 50) {
+                        $("header").css({"position": "fixed"});
+                    } else{
+                        $("header").css({"position": "relative"});
+                    }
+                });
+        </script>
+        
+            </header>
+        
+               <div class = "nav">
+                <a href="#" id="menu-icon"></a>
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li class= "services">
+                        <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
+                        <div class = "dropdown-content">
+                            <a href="portfolio.html">Gallery</a>
+                        </div>
+                    </li>
+                    <li class= "services">
+                        <a href="javascript:void(0)" class="dropbtn">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#wedding">Weddings</a>
+                            <a href="#baby">Baby</a>
+                            <a href="#portrait">Portrait</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+         <script>
+                    $(function(){
+                       $("#menu-icon li").hover(
+                           function(){
+                                $("ul.sub", this).slideDown(500);
+                           },
+                           function(){
+                            $("ul.sub", this).slideDown(300);
+                           }
+                       );
+                        });
+            </script>
+<div style="background-color:silver; height:900px;" class="main">
+    <div class="first">
+    <h1>
+        <p style="padding:70px 20px; font-family: Droid-serif;font-size:50px; color:black;">About Me </p>
+    </h1>
+    </div>
+
+    <p style="padding:20px;"><a href="index.html" style="text-decoration:none; color:#10a8b5;">Home</a> / About me</p>
+    <div class= "pix">  
+    <article style="padding:10px 0px 10px 30px;">
+            <img src="Image\benji.jpg" style="float:left; margin-right:50px;" width="30%" alt="ccbenji">
+    </article>
+    <div class = "text" style="padding:0px 100px 20px 30px;">
+<aside>
+    <p style="color:black; font-family: Open-sans; font-size:18px;">
+            Covenant Chimnonso Benjamin leads a double career as a creative content developer and a photographer. He is a graduate of English and Literature from University of Benin, Benin City, Edo State. Despite his career, he has also found success following his lifetime passion of photography.
+            He was born in Benin and had the opportunity to see sceneries that influenced his viewpoint and perspective and maybe unconsciously defined the absolute meanings of words like “sunset”, “sunrise”, and many others. CCBenji; a documentary photographer, gives all his creativity to elaborate and explore this new world of photography and helping people tell their stories in pictures.
+            
+            A lover of B&W photography but open to color. 70% of his work is B&W simply because, those photos cannot work in color. Generally, he believes that B&W photography has more color than color photography because the multiple variations of possible grays, if treated correctly, can reveal much more depth and drama than color can offer.
+            He always try to leave a message behind his photos. For him every photo has symbolic meanings and sometimes he leaves the symbols to speak for themselves but there are times he has to give a guidance and this is usually the title he chooses for a collection. He works with collections of photos (sets of 5 or more) and this is because he always need a concept when he takes photographs. Taking a photo is always a serious matter for him and if there is no concept or no message prefers to stay silent. After all Ansel Adams said it much better : <i>“When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.”</i>
+    </p>
+</aside>
+<br>
+<br>
+<p style="text-decoration-line: overline;">Share this on: </p>
+<a href="#"><button id="sub" type = "btn" style = "border-radius:5px; font-family:Droid serif; font-size:15px;color: grey;"><b><i>facebook</i></b></button></a>
+</div>
+</div>
+</div>
+    <div class="wrap">
+        
+            <section>
+                   <h2 style= "font-family: Droid serif; color:#e8eaed; text-decoration-line: underline; text-decoration-style:dotted;"> Subscribe to Blog via Email</h2>
+    
+                    <p style="color:grey; padding:10px; font-size: 17px; text-align: left;">Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+                    <form>
+                    <input id="email" type ="email" placeholder="Email Address" required><br>
+                    <br>
+                    <a href="#"><button id="subscribe" type = "btn" style = "font-family:Droid serif; font-size:15px;color: grey;"><b><i>Subscribe</i></b></button></a>
+                    </form>
+                    
+                    <!--
+                    <script>
+                            $(function(){
+                                $("#subscribe").click(
+                                    function(){
+                                        window.location = ""
+                                        alert("Thanks for subscribing to our blog! /n It promises to be awesome!!!");
+                                    }
+                                );
+                        
+                            });
+                        </script>
+                    -->
+                    
+            </section>
+        <div class="clear"></div>
+    
+            <section id="post" style="float:right;">
+                    <h2 style= "font-family: Droid serif; color:#e8eaed; text-decoration-line: underline; text-decoration-style:dotted;">Recent posts</h2>
+                    <ul style= "list-style-type: none;">
+                        <li> <a href="#">Fine Art Photography</a></li>
+                        <li> <a href="#">Calculating exposure times</a></li>
+                        <li> <a href="#">A Guide for Neutral Density Filters</a></li>
+                    </ul>
+            </section>
+             <div class="clear"></div>
+            <section style="float:right;">
+                <img src="Image\imac_face.png" width= "50%" alt="image">
+                <p style="color:aliceblue;">Like us on <a href="#">facebook</a></p>
+            </section>
+                <div class="clear"></div>
+    
+    </div>
+
+    <footer class="first">
+        <section>
+            <h3 style="font-family: open sans;">ccbenji.co</h3>
+            <p>+2349066991205<br>
+            Ugbowo, Benin City<br>
+            <a href="#">photography@ccbenji.co.ng</a></p>
+        </section>
+        <section style=" float:right;">
+            <h3 style="font-family: open sans;"> Connect With Us!</h3>
+            <ul class= "social">
+                <li><a href="#"> <img src ="Image\facebook-icon.png" alt="facebook-icon"></a></li>
+                <li><a href="#"> <img src ="Image\twitter-icon.png"   alt="twitter-icon"> </a></li>
+                <li><a href="#"> <img src ="Image\linkedin-icon.png"  alt="linkedin-icon"></a></li>
+                <li><a href="#"> <img src ="Image\skype-icon.png"    alt="skype-icon"></a></li>
+                <li><a href="#"> <img src ="Image\instagram-icon.png"  alt="instagram-icon"></a></li>
+            </ul>
+        </section>
+       <div class="clear"></div>
+    </footer>
+    <footer class= "second">
+        <p style="float:right; color:gray;">&copy; ccbenji | photography, 2018.</p>
+    </footer>
+</body>
+</html>
